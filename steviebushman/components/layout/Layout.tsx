@@ -1,10 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
+import { CenterPanel } from './CenterPanel-sidecar'
+import { ColumnTwo } from './ColumnTwo-sidecar'
 import css from './Layout.module.scss'
-import Link from 'next/link'
-import * as l from 'lodash'
-
-const links = [['/', 'Home']]
 
 export const Layout = (props: { children: React.ReactNode; title: string }) => {
   return (
@@ -19,24 +17,21 @@ export const Layout = (props: { children: React.ReactNode; title: string }) => {
         ></link>
       </Head>
 
-      <div>zombocom!</div>
+      <div>
+        <CenterPanel>
+          <ColumnTwo>
+            <div>StevieBushman.com</div>
+            <div>stevie@steviebushman.com</div>
+          </ColumnTwo>
 
-      <div className={css.header}>
-        {l.map(links, (c, cIdx) => (
-          <React.Fragment key={cIdx}>
-            {cIdx !== 0 && <> | </>}
-            <Link href={c[0]}>
-              <a>{c[1]}</a>
-            </Link>{' '}
-          </React.Fragment>
-        ))}
+          {props.children}
+
+          <ColumnTwo>
+            <div>&copy; Stevie Bushman</div>
+            <div>stevie@steviebushman.com</div>
+          </ColumnTwo>
+        </CenterPanel>
       </div>
-      {props.children}
-
-      <footer>
-        {/* <hr /> */}
-        <span>&copy; 2020 Stevie Bushman &mdash; stevie@steviebushman.com</span>
-      </footer>
     </div>
   )
 }
