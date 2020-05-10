@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import * as React from 'react'
+import React from 'react'
 import css from './Layout.module.scss'
 import Link from 'next/link'
 import * as l from 'lodash'
