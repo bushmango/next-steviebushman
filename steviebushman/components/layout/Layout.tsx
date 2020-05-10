@@ -4,13 +4,7 @@ import css from './Layout.module.scss'
 import Link from 'next/link'
 import * as l from 'lodash'
 
-const links = [
-  ['/', 'Home'],
-  ['/rebreather', 'Rebreather'],
-  ['/game-of-life', 'Game of Life'],
-  ['/game-of-life-classic', 'Game of Life Classic'],
-  ['/geometry-of-circles', 'Geometry of Circles'],
-]
+const links = [['/', 'Home']]
 
 export const Layout = (props: { children: React.ReactNode; title: string }) => {
   return (
@@ -24,6 +18,8 @@ export const Layout = (props: { children: React.ReactNode; title: string }) => {
           rel='stylesheet'
         ></link>
       </Head>
+
+      <div>zombocom!</div>
 
       <div className={css.header}>
         {l.map(links, (c, cIdx) => (
