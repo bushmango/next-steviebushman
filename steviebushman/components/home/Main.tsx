@@ -3,6 +3,7 @@ import React from 'react'
 import { Section } from './Section-sidecar'
 import { ExternalLink } from './ExternalLink-sidecar'
 import { solidIcons } from './solidIcons'
+import { Games } from './Games'
 
 export const Main = () => {
   return (
@@ -36,27 +37,7 @@ export const Main = () => {
         Experiments
       </Section>
 
-      <Section icon={solidIcons.faGamepad} title='Games'>
-        <ExternalLink
-          href='http://ludumdare.com/compo/author/bushmango3/'
-          label="Bushmango's Games"
-        />{' '}
-        - Ludum Dare 48/72 hour games
-        <br />
-        <ExternalLink
-          href='https://brendens-adventure.steviebushman.com'
-          label="Brenden's Adventure"
-        />{' '}
-        - An adventure game written by my son
-        {/* <BlockContainer>
-              <Block title="Brenden's Adventure">
-
-              </Block>
-              <Block title='Ludum Dare games'>
-                <ExternalLink href='http://ludumdare.com/compo/author/bushmango3/' label="Bushmango's Games" />
-              </Block>
-            </BlockContainer> */}
-      </Section>
+      <Games />
 
       <Section icon={solidIcons.faRetweet} title='Our Friends'>
         <ExternalLink href='http://www.ProphecyCow.com/' /> Everything you ever
