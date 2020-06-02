@@ -30,6 +30,14 @@ let jams: ILdJam[] = [
     updatedToNewServers: true,
   },
   {
+    num: '40',
+    ldUrl: 'https://ldjam.com/events/ludum-dare/40/hatformer',
+    url: '',
+    newUrl: 'https://ld40.steviebushman.com',
+    name: 'Hatformer',
+    updatedToNewServers: true,
+  },
+  {
     num: '38',
     ldUrl: 'https://ldjam.com/events/ludum-dare/38/5-minute-civilization',
     url: 'https://ludumdare38.steviebushman.com/',
