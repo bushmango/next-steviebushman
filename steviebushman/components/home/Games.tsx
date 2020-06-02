@@ -19,7 +19,9 @@ let jams: ILdJam[] = [
     num: '45',
     ldUrl: 'https://ldjam.com/events/ludum-dare/45/untitled-zombie-game',
     url: 'https://raz.stevebushman.com/ludum-dare/ludum-dare-45',
+    newUrl: 'https://ld45.steviebushman.com/',
     name: 'Untitled Zombie Game',
+    updatedToNewServers: true,
   },
   {
     num: '43',
